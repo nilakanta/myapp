@@ -1,0 +1,27 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap-env:Header>
+      <eb:MessageHeader eb:version="1.0" soap-env:mustUnderstand="1" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader">
+         <eb:From>
+            <eb:PartyId eb:type="URI">2323</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId eb:type="URI">1212</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>A84G</eb:CPAId>
+         <eb:ConversationId>conversation_ID</eb:ConversationId>
+         <eb:Service eb:type="sabreXML">Session</eb:Service>
+         <eb:Action>SessionCloseRS</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>9efaafdc-7469-4e74-b4bb-cb9e8c359723@22</eb:MessageId>
+            <eb:Timestamp>2012-01-01T11:44:49</eb:Timestamp>
+            <eb:RefToMessageId>1001</eb:RefToMessageId>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+         <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESA!ICESMSLB\/RES.LB!-3969814747234240378!602592!0</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </soap-env:Header>
+   <soap-env:Body>
+      <SessionCloseRS version="1" status="Approved" xmlns="http://www.opentravel.org/OTA/2002/11"/>
+   </soap-env:Body>
+</soap-env:Envelope>

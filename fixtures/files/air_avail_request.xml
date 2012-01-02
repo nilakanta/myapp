@@ -1,0 +1,42 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+   <SOAP-ENV:Header>
+      <eb:MessageHeader SOAP-ENV:mustUnderstand="1" eb:version="1.0">
+         <eb:From>
+            <eb:PartyId type="urn:x12.org:IO5:01">99999</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId type="urn:x12.org:IO5:01">123123</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>A84G</eb:CPAId>
+         <eb:ConversationId>conversation_ID</eb:ConversationId>
+         <eb:Service eb:type="OTA">OTA_AirAvailLLSRQ</eb:Service>
+         <eb:Action>OTA_AirAvailLLSRQ</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>mid:20001209-133003-2333@clientofsabre.com</eb:MessageId>
+            <eb:Timestamp>2001-02-15T11:15:12Z</eb:Timestamp>
+            <eb:TimeToLive>2001-02-15T11:15:12Z</eb:TimeToLive>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/12/utility">
+         <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!-3969810888468242046!837347!0</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <OTA_AirAvailRQ Version="2003A.TsabreXML1.10.1" xmlns="http://webservices.sabre.com/sabreXML/2003/07" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <POS>
+            <Source PseudoCityCode="ipcc"/>
+         </POS>
+         <OriginDestinationInformation>
+            <DepartureDateTime DateTime="2012-02-04T00:00:00"/>
+            <OriginLocation LocationCode="DFW"/>
+            <DestinationLocation LocationCode="LAX"/>
+            <ConnectionLocations>
+               <ConnectionLocation LocationCode="NYC"/>
+            </ConnectionLocations>
+         </OriginDestinationInformation>
+         <TravelPreferences MaxStopsQuantity="2">
+            <VendorPref Code="AA"/>
+         </TravelPreferences>
+      </OTA_AirAvailRQ>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

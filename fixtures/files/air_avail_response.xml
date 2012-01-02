@@ -1,0 +1,556 @@
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap-env:Header>
+      <eb:MessageHeader eb:version="1.0" soap-env:mustUnderstand="1" xmlns:eb="http://www.ebxml.org/namespaces/messageHeader">
+         <eb:From>
+            <eb:PartyId eb:type="URI">123123</eb:PartyId>
+         </eb:From>
+         <eb:To>
+            <eb:PartyId eb:type="URI">99999</eb:PartyId>
+         </eb:To>
+         <eb:CPAId>A84G</eb:CPAId>
+         <eb:ConversationId>conversation_ID</eb:ConversationId>
+         <eb:Service eb:type="OTA">OTA_AirAvailLLSRQ</eb:Service>
+         <eb:Action>OTA_AirAvailLLSRS</eb:Action>
+         <eb:MessageData>
+            <eb:MessageId>8ba8b324-f824-4d5a-96b9-f25a95920437@30</eb:MessageId>
+            <eb:Timestamp>2012-01-01T12:00:20</eb:Timestamp>
+            <eb:RefToMessageId>mid:20001209-133003-2333@clientofsabre.com</eb:RefToMessageId>
+         </eb:MessageData>
+      </eb:MessageHeader>
+      <wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext">
+         <wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/RESD!ICESMSLB\/RES.LB!-3969810888468242046!837347!0</wsse:BinarySecurityToken>
+      </wsse:Security>
+   </soap-env:Header>
+   <soap-env:Body>
+      <OTA_AirAvailRS TimeStamp="2012-01-01T12:00:20" AltLangID="en-us" Version="2003A.TsabreXML1.10.1" PrimaryLangID="en-us" EchoToken="String" SequenceNmbr="1" Target="Production" xmlns="http://webservices.sabre.com/sabreXML/2003/07" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <Success/>
+         <OriginDestinationOptions>
+            <OriginDestinationOption>
+               <TPA_Extensions>
+                  <OriginCityTimeZoneCode Code="CST"/>
+                  <DestinationCityTimeZoneCode Code="PST"/>
+                  <TimeZoneDifference Code="-2"/>
+                  <DayOfWeek>SAT</DayOfWeek>
+               </TPA_Extensions>
+               <FlightSegment Ticket="E" OnTimeRate="8" StopQuantity="0" FlightNumber="400" DepartureDateTime="2012-02-04T10:40:00" ArrivalDateTime="2012-02-04T14:59:00" RPH="1" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="DFW"/>
+                  <ArrivalAirport LocationCode="JFK"/>
+                  <OperatingAirline Code="AA" FlightNumber="400"/>
+                  <Equipment AirEquipType="738"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="L"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="7" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="7" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+               <FlightSegment Ticket="E" OnTimeRate="6" StopQuantity="0" FlightNumber="133" DepartureDateTime="2012-02-04T15:35:00" ArrivalDateTime="2012-02-04T19:00:00" RPH="2" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="JFK"/>
+                  <ArrivalAirport LocationCode="LAX"/>
+                  <OperatingAirline Code="AA" FlightNumber="133"/>
+                  <Equipment AirEquipType="762"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT                           USD 150.00    BG-THIRD CHECKED BAG*                           USD  35.00    BG-SECOND CHECKED BAG*                           USD  25.00    BG-FIRST CHECKED BAG*</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="D"/>
+                     <Meal MealCode="G"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="6" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="1" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="1" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="J" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="D" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="I" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="16"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="17"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="18"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="19"/>
+                  <TPA_Extensions>
+                     <ConnectionIndicator Ind="true"/>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+            </OriginDestinationOption>
+            <OriginDestinationOption>
+               <TPA_Extensions>
+                  <OriginCityTimeZoneCode Code="CST"/>
+                  <DestinationCityTimeZoneCode Code="PST"/>
+                  <TimeZoneDifference Code="-2"/>
+                  <DayOfWeek>SAT</DayOfWeek>
+               </TPA_Extensions>
+               <FlightSegment Ticket="E" OnTimeRate="8" StopQuantity="0" FlightNumber="400" DepartureDateTime="2012-02-04T10:40:00" ArrivalDateTime="2012-02-04T14:59:00" RPH="3" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="DFW"/>
+                  <ArrivalAirport LocationCode="JFK"/>
+                  <OperatingAirline Code="AA" FlightNumber="400"/>
+                  <Equipment AirEquipType="738"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="L"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="7" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="7" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+               <FlightSegment Ticket="E" OnTimeRate="7" StopQuantity="0" FlightNumber="181" DepartureDateTime="2012-02-04T16:35:00" ArrivalDateTime="2012-02-04T20:00:00" RPH="4" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="JFK"/>
+                  <ArrivalAirport LocationCode="LAX"/>
+                  <OperatingAirline Code="AA" FlightNumber="181"/>
+                  <Equipment AirEquipType="762"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT                           USD 150.00    BG-THIRD CHECKED BAG*                           USD  35.00    BG-SECOND CHECKED BAG*                           USD  25.00    BG-FIRST CHECKED BAG*</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="D"/>
+                     <Meal MealCode="G"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="2" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="1" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="J" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="D" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="I" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="16"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="17"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="18"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="19"/>
+                  <TPA_Extensions>
+                     <ConnectionIndicator Ind="true"/>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+            </OriginDestinationOption>
+            <OriginDestinationOption>
+               <TPA_Extensions>
+                  <OriginCityTimeZoneCode Code="CST"/>
+                  <DestinationCityTimeZoneCode Code="PST"/>
+                  <TimeZoneDifference Code="-2"/>
+                  <DayOfWeek>SAT</DayOfWeek>
+               </TPA_Extensions>
+               <FlightSegment Ticket="E" OnTimeRate="5" StopQuantity="0" FlightNumber="558" DepartureDateTime="2012-02-04T11:35:00" ArrivalDateTime="2012-02-04T16:00:00" RPH="5" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="DFW"/>
+                  <ArrivalAirport LocationCode="EWR"/>
+                  <OperatingAirline Code="AA" FlightNumber="558"/>
+                  <Equipment AirEquipType="S80"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="L"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="7" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="7" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+               <FlightSegment Ticket="E" OnTimeRate="6" StopQuantity="0" FlightNumber="119" DepartureDateTime="2012-02-04T18:12:00" ArrivalDateTime="2012-02-04T21:30:00" RPH="6" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="EWR"/>
+                  <ArrivalAirport LocationCode="LAX"/>
+                  <OperatingAirline Code="AA" FlightNumber="119"/>
+                  <Equipment AirEquipType="762"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT                           USD 150.00    BG-THIRD CHECKED BAG*                           USD  35.00    BG-SECOND CHECKED BAG*                           USD  25.00    BG-FIRST CHECKED BAG*</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="D"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="4" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="1" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="0" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ConnectionIndicator Ind="true"/>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+            </OriginDestinationOption>
+            <OriginDestinationOption>
+               <TPA_Extensions>
+                  <OriginCityTimeZoneCode Code="CST"/>
+                  <DestinationCityTimeZoneCode Code="PST"/>
+                  <TimeZoneDifference Code="-2"/>
+                  <DayOfWeek>SAT</DayOfWeek>
+               </TPA_Extensions>
+               <FlightSegment Ticket="E" OnTimeRate="7" StopQuantity="0" FlightNumber="732" DepartureDateTime="2012-02-04T13:40:00" ArrivalDateTime="2012-02-04T17:59:00" RPH="7" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="DFW"/>
+                  <ArrivalAirport LocationCode="LGA"/>
+                  <OperatingAirline Code="AA" FlightNumber="732"/>
+                  <Equipment AirEquipType="738"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="S"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="7" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="5" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="false" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+               <FlightSegment Ticket="E" OnTimeRate="7" StopQuantity="0" FlightNumber="185" DepartureDateTime="2012-02-04T21:00:00" ArrivalDateTime="2012-02-05T00:23:00" RPH="8" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="JFK"/>
+                  <ArrivalAirport LocationCode="LAX"/>
+                  <OperatingAirline Code="AA" FlightNumber="185"/>
+                  <Equipment AirEquipType="762"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT                           USD 150.00    BG-THIRD CHECKED BAG*                           USD  35.00    BG-SECOND CHECKED BAG*                           USD  25.00    BG-FIRST CHECKED BAG*</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="S"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="6" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="5" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="J" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="D" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="I" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="16"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="17"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="18"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="19"/>
+                  <TPA_Extensions>
+                     <ConnectionIndicator Ind="true"/>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+            </OriginDestinationOption>
+            <OriginDestinationOption>
+               <TPA_Extensions>
+                  <OriginCityTimeZoneCode Code="CST"/>
+                  <DestinationCityTimeZoneCode Code="PST"/>
+                  <TimeZoneDifference Code="-2"/>
+                  <DayOfWeek>SAT</DayOfWeek>
+               </TPA_Extensions>
+               <FlightSegment Ticket="E" OnTimeRate="5" StopQuantity="0" FlightNumber="558" DepartureDateTime="2012-02-04T11:35:00" ArrivalDateTime="2012-02-04T16:00:00" RPH="9" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="DFW"/>
+                  <ArrivalAirport LocationCode="EWR"/>
+                  <OperatingAirline Code="AA" FlightNumber="558"/>
+                  <Equipment AirEquipType="S80"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="L"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="7" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="7" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+               <FlightSegment Ticket="E" OnTimeRate="7" StopQuantity="0" FlightNumber="21" DepartureDateTime="2012-02-04T19:10:00" ArrivalDateTime="2012-02-04T22:30:00" RPH="10" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="JFK"/>
+                  <ArrivalAirport LocationCode="LAX"/>
+                  <OperatingAirline Code="AA" FlightNumber="21"/>
+                  <Equipment AirEquipType="762"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT                           USD 150.00    BG-THIRD CHECKED BAG*                           USD  35.00    BG-SECOND CHECKED BAG*                           USD  25.00    BG-FIRST CHECKED BAG*</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="D"/>
+                     <Meal MealCode="G"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="5" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="4" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="J" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="D" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="I" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="16"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="17"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="18"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="19"/>
+                  <TPA_Extensions>
+                     <ConnectionIndicator Ind="true"/>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+            </OriginDestinationOption>
+            <OriginDestinationOption>
+               <TPA_Extensions>
+                  <OriginCityTimeZoneCode Code="CST"/>
+                  <DestinationCityTimeZoneCode Code="PST"/>
+                  <TimeZoneDifference Code="-2"/>
+                  <DayOfWeek>SAT</DayOfWeek>
+               </TPA_Extensions>
+               <FlightSegment Ticket="E" OnTimeRate="8" StopQuantity="0" FlightNumber="400" DepartureDateTime="2012-02-04T10:40:00" ArrivalDateTime="2012-02-04T14:59:00" RPH="11" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="DFW"/>
+                  <ArrivalAirport LocationCode="JFK"/>
+                  <OperatingAirline Code="AA" FlightNumber="400"/>
+                  <Equipment AirEquipType="738"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="L"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="7" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="7" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="7" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+               <FlightSegment Ticket="E" OnTimeRate="6" StopQuantity="0" FlightNumber="119" DepartureDateTime="2012-02-04T18:12:00" ArrivalDateTime="2012-02-04T21:30:00" RPH="12" SmokingAllowed="false">
+                  <DepartureAirport LocationCode="EWR"/>
+                  <ArrivalAirport LocationCode="LAX"/>
+                  <OperatingAirline Code="AA" FlightNumber="119"/>
+                  <Equipment AirEquipType="762"/>
+                  <MarketingAirline Code="AA"/>
+                  <Comment>0.00    SA-SEAT ASSIGNMENT                           USD 150.00    BG-THIRD CHECKED BAG*                           USD  35.00    BG-SECOND CHECKED BAG*                           USD  25.00    BG-FIRST CHECKED BAG*</Comment>
+                  <MarketingCabin>
+                     <Meal MealCode="D"/>
+                     <Meal MealCode="F"/>
+                  </MarketingCabin>
+                  <BookingClassAvail ResBookDesigCode="F" Availability="4" RPH="1"/>
+                  <BookingClassAvail ResBookDesigCode="A" Availability="1" RPH="2"/>
+                  <BookingClassAvail ResBookDesigCode="P" Availability="0" RPH="3"/>
+                  <BookingClassAvail ResBookDesigCode="Y" Availability="7" RPH="4"/>
+                  <BookingClassAvail ResBookDesigCode="B" Availability="7" RPH="5"/>
+                  <BookingClassAvail ResBookDesigCode="H" Availability="7" RPH="6"/>
+                  <BookingClassAvail ResBookDesigCode="M" Availability="7" RPH="7"/>
+                  <BookingClassAvail ResBookDesigCode="K" Availability="7" RPH="8"/>
+                  <BookingClassAvail ResBookDesigCode="L" Availability="7" RPH="9"/>
+                  <BookingClassAvail ResBookDesigCode="W" Availability="7" RPH="10"/>
+                  <BookingClassAvail ResBookDesigCode="V" Availability="7" RPH="11"/>
+                  <BookingClassAvail ResBookDesigCode="G" Availability="7" RPH="12"/>
+                  <BookingClassAvail ResBookDesigCode="S" Availability="7" RPH="13"/>
+                  <BookingClassAvail ResBookDesigCode="N" Availability="7" RPH="14"/>
+                  <BookingClassAvail ResBookDesigCode="Q" Availability="7" RPH="15"/>
+                  <BookingClassAvail ResBookDesigCode="O" Availability="7" RPH="16"/>
+                  <TPA_Extensions>
+                     <ConnectionIndicator Ind="true"/>
+                     <ParticipationLevel Code="DCA"/>
+                     <DaysOfOperation>
+                        <OperationSchedule>
+                           <OperationTimes>
+                              <OperationTime Mon="true" Sun="true" Tue="true" Sat="true" Thur="true" Fri="true" Weds="true"/>
+                           </OperationTimes>
+                        </OperationSchedule>
+                     </DaysOfOperation>
+                  </TPA_Extensions>
+               </FlightSegment>
+            </OriginDestinationOption>
+         </OriginDestinationOptions>
+         <TPA_Extensions>
+            <HostCommand>ÂÂÂAÂÂRS01S093^AD01Â104FEBDFWLAX1200ANYCÂ¥AA</HostCommand>
+         </TPA_Extensions>
+      </OTA_AirAvailRS>
+   </soap-env:Body>
+</soap-env:Envelope>
